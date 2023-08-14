@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import "../styles/ScoreBoard.css";
 
 export function ScoreBoard({ currScore, highScore }) {
   return (
-    <div>
+    <div className="scoreboard">
       <p>
         Current Score: <span>{currScore}</span>
       </p>

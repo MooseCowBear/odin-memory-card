@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { updateScores, shuffle, gameOver } from "../helpers/gameBoardHelpers";
+import "../styles/Gameboard.css";
 
 export function Gameboard({
   dogImages,
@@ -11,16 +12,12 @@ export function Gameboard({
   numGames,
   updateNumGames,
 }) {
-  // take the dog images, draw the board and add click handlers...
-  // want some data attribute on the cards to denote whether they have been clicked
-  // which updates with the click and also updates the score appropriately
-
   const clickHandler = (e, index) => {
     console.log("dog has been clicked", index);
     let data = [...dogImages];
     if (data[index].clicked === true) {
       updateCurrScore(0);
-      updateNumGames(numGames + 1); // to cause a new fetch
+      updateNumGames(numGames + 1); 
       return;
     }
     data[index].clicked = true;
@@ -29,7 +26,7 @@ export function Gameboard({
     // now check if over now that arr has been updated, but before shuffle
     const over = gameOver(data);
     console.log("game over is: ", over);
-    
+
     if (over) {
       updateNumGames(numGames + 1);
       return;
@@ -51,7 +48,6 @@ export function Gameboard({
             }}
           >
             <img className="dog-image" src={dog.image}></img>
-            <p>{index}</p>
           </button>
         );
       })}
