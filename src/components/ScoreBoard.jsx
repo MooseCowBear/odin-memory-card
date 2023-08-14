@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 export function ScoreBoard({ currScore, highScore }) {
-  // will take the curr score, high score
   return (
     <div>
       <p>
