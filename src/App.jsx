@@ -12,6 +12,7 @@ function App() {
   const [numGames, setNumGames] = useState(0); // used to start a new game
 
   useEffect(() => {
+    // update to be conditional on mode and dependent on mode
     fetchDogData(setDogImages);
   }, [numGames]);  
 

@@ -22,7 +22,7 @@ body {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 590px) {
   .header {
     flex-direction: column;
     gap: 1rem;
