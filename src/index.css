@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,6 +13,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --background-gradient: linear-gradient(#C0FCF8, #619B98, #007676);
 }
 
 a {
@@ -61,7 +64,7 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 }
 

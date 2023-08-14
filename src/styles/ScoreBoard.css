@@ -1,3 +1,10 @@
 .scoreboard {
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
+  background-color: rgba(68, 70, 74, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Lalezar';
+  letter-spacing: 1px;
+  font-size: 1.25rem;
 }

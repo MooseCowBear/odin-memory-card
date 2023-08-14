@@ -17,21 +17,19 @@ function App() {
 
   return (
     <>
-      <header>
+      <div className="header">
         <Header />
         <ScoreBoard currScore={currScore} highScore={highScore} />
-      </header>
-      <main>
-        <Gameboard dogImages={dogImages} 
-          updateDogImages={setDogImages}
-          currScore={currScore}
-          updateCurrScore={setCurrScore}
-          highScore={highScore}
-          updateHighScore={setHighScore}
-          numGames={numGames}
-          updateNumGames={setNumGames}
-        />
-      </main>
+      </div>
+      <Gameboard dogImages={dogImages} 
+        updateDogImages={setDogImages}
+        currScore={currScore}
+        updateCurrScore={setCurrScore}
+        highScore={highScore}
+        updateHighScore={setHighScore}
+        numGames={numGames}
+        updateNumGames={setNumGames}
+      />
     </>
   );
 }
