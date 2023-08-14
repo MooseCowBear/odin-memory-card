@@ -1,5 +1,4 @@
-.heading > div {
-  padding: 0 1rem;
+.heading {
   text-align: center;
 }
 
@@ -10,5 +9,4 @@
 
 .heading h1 {
   font-family: 'Lalezar';
-  text-align: center;
 }
