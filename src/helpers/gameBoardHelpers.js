@@ -16,3 +16,7 @@ export function shuffle(arr) {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
 }
+
+export function gameOver(dogArr) {
+  return !dogArr.some(elem => elem.clicked === false);
+}

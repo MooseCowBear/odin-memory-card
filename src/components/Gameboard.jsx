@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { updateScores, shuffle } from "../helpers/gameBoardHelpers";
+import { updateScores, shuffle, gameOver } from "../helpers/gameBoardHelpers";
 
 export function Gameboard({
   dogImages,
@@ -25,6 +25,16 @@ export function Gameboard({
     }
     data[index].clicked = true;
     updateScores(currScore + 1, highScore, updateCurrScore, updateHighScore);
+
+    // now check if over now that arr has been updated, but before shuffle
+    const over = gameOver(data);
+    console.log("game over is: ", over);
+    
+    if (over) {
+      updateNumGames(numGames + 1);
+      return;
+    }
+
     shuffle(data);
     console.log("new dog arr", data);
     updateDogImages(data);
