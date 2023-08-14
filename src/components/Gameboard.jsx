@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { updateScores } from "../helpers/gameBoardHelpers";
+import { updateScores, shuffle } from "../helpers/gameBoardHelpers";
 
 export function Gameboard({
   dogImages,
@@ -15,8 +15,6 @@ export function Gameboard({
   // want some data attribute on the cards to denote whether they have been clicked
   // which updates with the click and also updates the score appropriately
 
-  console.log(dogImages);
-
   const clickHandler = (e, index) => {
     console.log("dog has been clicked", index);
     let data = [...dogImages];
@@ -27,8 +25,8 @@ export function Gameboard({
     }
     data[index].clicked = true;
     updateScores(currScore + 1, highScore, updateCurrScore, updateHighScore);
-
-    // still need to shuffle the data, here...
+    shuffle(data);
+    console.log("new dog arr", data);
     updateDogImages(data);
   };
 
