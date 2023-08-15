@@ -26,7 +26,7 @@ function getHardModeData(setDogData) {
   const dogObjects = [];
 
   for (let i = 1; i <= 12; i++) {
-    dogObjects.push(createDogObject(`src/assets/sleeping_${i}.jpeg`));
+    dogObjects.push(createDogObject(`/sleeping_${i}.jpeg`));
   }
   shuffle(dogObjects);
   setDogData(dogObjects);
