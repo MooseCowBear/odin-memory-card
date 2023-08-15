@@ -1,25 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins&display=swap");
 
 :root {
   line-height: 1.5;
   font-weight: 400;
-  color: #213547;
+  color: rgb(33, 53, 71);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --background-gradient: linear-gradient(#C0FCF8, #619B98, #007676);
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #747bff;
+  --background-gradient: linear-gradient(
+    rgb(192, 252, 248),
+    rgb(97, 155, 152),
+    rgb(0, 118, 118)
+  );
+  --background: rgba(255, 255, 255, 0.9);
+  --scoreboard: rgba(68, 70, 74, 0.9);
 }
 
 body {
@@ -38,13 +35,13 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-family: inherit;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--background);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: rgb(100, 108, 255);
 }
 
 button:focus,
@@ -64,7 +61,7 @@ h1,
 h2,
 h3,
 h4,
-p, 
+p,
 section,
 article {
   margin: 0;
@@ -96,9 +93,9 @@ a:not([class]) {
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {

@@ -6,6 +6,10 @@
   gap: 0.5rem;
 }
 
+.dog-card {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
 .dog-image {
   height: 200px;
   width: 200px;

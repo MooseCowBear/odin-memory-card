@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.7rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--background);
 }
 
 .footer button {
@@ -12,7 +12,7 @@
 
 .footer button:hover,
 .footer button:focus {
-  background-color: rgba(68, 70, 74, 0.9);
-  color: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(68, 70, 74, 0.9);
+  background-color: var(--scoreboard);
+  color: var(--background);
+  border: 1px solid var(--scoreboard);
 }

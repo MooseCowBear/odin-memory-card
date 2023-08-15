@@ -23,7 +23,6 @@ async function fetchDogData(setDogData) {
 }
 
 function getHardModeData(setDogData) {
-  console.log("calling get hardmode dogs");
   const dogObjects = [];
 
   for (let i = 1; i <= 12; i++) {

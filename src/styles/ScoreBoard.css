@@ -1,7 +1,7 @@
 .scoreboard {
   padding: 1rem 3rem;
-  background-color: rgba(68, 70, 74, 0.9);
-  color: rgba(255, 255, 255, 0.9);
+  background-color: var(--scoreboard);
+  color: var(--background);
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   font-family: 'Lalezar';

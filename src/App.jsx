@@ -13,10 +13,7 @@ function App() {
   const [numGames, setNumGames] = useState(0); // used to start a new game
   const [hardMode, setHardMode] = useState(false);
 
-  // TODO: add hardmode state, initial false + add footer, update use effect
-
   useEffect(() => {
-    // update to be conditional on mode and dependent on mode
     getSomeDogs(hardMode, setDogImages);
   }, [numGames, hardMode]);
 

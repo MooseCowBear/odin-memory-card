@@ -13,17 +13,16 @@ export function Gameboard({
   updateNumGames,
 }) {
   const clickHandler = (e, index) => {
-    console.log("dog has been clicked", index);
     let data = [...dogImages];
     if (data[index].clicked === true) {
       updateCurrScore(0);
-      updateNumGames(numGames + 1); 
+      updateNumGames(numGames + 1);
       return;
     }
     data[index].clicked = true;
     updateScores(currScore + 1, highScore, updateCurrScore, updateHighScore);
 
-    // now check if over now that arr has been updated, but before shuffle
+    // now check if over now that arr has been updated
     const over = gameOver(data);
 
     if (over) {
@@ -32,11 +31,9 @@ export function Gameboard({
     }
 
     shuffle(data);
-    console.log("new dog arr", data);
     updateDogImages(data);
   };
 
-  // will this be visible before a successful fetch?
   if (dogImages.length === 0) {
     return (
       <div className="error">
@@ -52,6 +49,7 @@ export function Gameboard({
         return (
           <button
             key={index}
+            className="dog-card"
             onClick={(e) => {
               clickHandler(e, index);
             }}
