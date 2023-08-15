@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "../styles/Footer.css";
 
-export function Footer({ hardMode, updateHardMode }) {
+export function Footer({ hardMode, updateHardMode, resetCurrScore }) {
   const modeAsString = (mode) => {
     return mode ? "hard" : "normal";
   };
@@ -12,6 +12,7 @@ export function Footer({ hardMode, updateHardMode }) {
       <button
         onClick={() => {
           updateHardMode(!hardMode);
+          resetCurrScore(0);
         }}
       >
         Switch to {modeAsString(!hardMode)} mode
@@ -23,4 +24,5 @@ export function Footer({ hardMode, updateHardMode }) {
 Footer.propTypes = {
   hardMode: PropTypes.bool.isRequired,
   updateHardMode: PropTypes.func.isRequired,
+  resetCurrScore: PropTypes.func.isRequired
 };

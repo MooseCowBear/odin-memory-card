@@ -33,7 +33,11 @@ function App() {
         numGames={numGames}
         updateNumGames={setNumGames}
       />
-      <Footer hardMode={hardMode} updateHardMode={setHardMode} />
+      <Footer
+        hardMode={hardMode}
+        updateHardMode={setHardMode}
+        resetCurrScore={setCurrScore}
+      />
     </>
   );
 }

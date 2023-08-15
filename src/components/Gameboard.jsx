@@ -37,8 +37,8 @@ export function Gameboard({
   if (dogImages.length === 0) {
     return (
       <div className="error">
-        Oh no! Something went wrong when we tried to get the dogs :(
-        <span>Try reloading the page</span>
+        Oh no! We have yet to find any dogs :(
+        <span>If the problem persists, try reloading the page</span>
       </div>
     );
   }
