@@ -25,7 +25,6 @@ export function Gameboard({
 
     // now check if over now that arr has been updated, but before shuffle
     const over = gameOver(data);
-    console.log("game over is: ", over);
 
     if (over) {
       updateNumGames(numGames + 1);
@@ -36,6 +35,16 @@ export function Gameboard({
     console.log("new dog arr", data);
     updateDogImages(data);
   };
+
+  // will this be visible before a successful fetch?
+  if (dogImages.length === 0) {
+    return (
+      <div className="error">
+        Oh no! Something went wrong when we tried to get the dogs :(
+        <span>Try reloading the page</span>
+      </div>
+    );
+  }
 
   return (
     <div className="gameboard">

@@ -12,3 +12,14 @@
   object-fit: cover;
   border-radius: 5px;
 }
+
+.error {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.error span {
+  display: block;
+  font-size: 1.25rem;
+}
