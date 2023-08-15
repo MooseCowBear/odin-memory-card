@@ -1,8 +1,20 @@
-# React + Vite
+# Memory Card Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an implementation of the [Odin Project's](https://www.theodinproject.com/) Memory Card assignment. 
 
-Currently, two official plugins are available:
+It is a simple game with the objective of clicking each card exactly once. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Two modes: normal and hard. Images for normal mode are retrieved from [Dog API](https://dog.ceo/dog-api/).
+
+- Cards are shuffled after each click, using the [Durstenfeld shuffle algorithm](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle#The_modern_algorithm). 
+
+## Built with 
+
+- React
+- Vite
+
+### Screenshot
+
+![alt text](screenshots/memory_game.png "memory card game")
